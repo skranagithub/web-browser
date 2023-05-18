@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta name="viewposrt" content="width=device-width, initial-scale=1.0">
+    <title>Home Page </title>
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="body">
+<div class="container">
+    <h1 style = "position:absolute; left:5%; top:56px;">&#127803;</h1>
+    <div style = "position:absolute; left:83%; top:62px;">
+        
+        <button class="btnn"type="submit"><a href="login"><i class="fa fa-user">&nbsp;&nbsp;</i><b>Login</b></a></button>&nbsp;&nbsp;
+        <button class="btnn" type="submit"><a href="register"><b>Register</b></a></button>
+    </div>
+    <div  class="imgp" style = "position:absolute; left:40%; top:150px;">
+        <img class="img1" src="static/sb1.jpeg"><p class="txt"><b><u>GOOGLE</u></b></p>  
+    </div>
+    <form action="https://www.google.com/search" method="get" class="search-bar">
+        <input type="text" placeholder=" Search here ...." name="q">
+        <button type="submit"><img class="img" src="static/search.png"></button>
+    </form>
+</div>
+<div class="data">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="dta">
+    <div class="containerr">
+        <h1 class="my-4 text-center">Weather For <span id="cityName"></span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Temperature</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-muted fw-light">°C</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"></span></li>
+                                <li>Min Temperature is <span id="min_temp"></span></li>
+                                <li>Max Temperature is <span id="max_temp"></span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
+                                    class="text-muted fw-light">%</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Feels like <span id="feels_like"></span></li>
+                                <li>Humidity is <span id="humidity"></span></li>
+                                <li>Wind degree is <span id="wind_degrees"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Wind Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-muted fw-light">km/hr</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind Speed is <span id="wind_speed"></span></li>
+                                <li>Sunrise time is <span id="sunrise"></span></li>
+                                <li>Sunset time is <span id="sunset"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+    <br>
+    <div>
+       <center> <iframe src="https://timesofindia.indiatimes.com/?from=mdr"  frameborder="0" height="500px" width="94%" 
+        allowtransparency="true" style="background-color: Snow; border-radius:0.5rem;"></iframe><center>
+    </div><br>
+    <div style="margin-left:3%;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129568758!2d77.06889897623361!3d28.527280343163746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1677098217362!5m2!1sen!2sin"
+            width="97%" height="350px"style="border:1px solid black; border-radius:0.7rem;" loading="lazy"></iframe>
+    </div>
+    <br><br>
+    <script src="https://code.tidio.co/nmxadnjmlhrxjmohoawbycuemkhbbu3x.js" async></script>
+</body>
+</html>
+
+
+

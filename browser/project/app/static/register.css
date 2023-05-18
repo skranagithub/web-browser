@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 4px 0 10px;
+    box-sizing: border-box;
+}
+.center{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(186, 104, 181, 0.9),rgba(61, 38, 132, 0.9),rgba(1, 5, 24, 0.9)),url(/static/bk1.jpg);
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image:linear-gradient(rgba(59, 182, 143, 0.9),rgba(46, 78, 152, 0.9),rgba(3, 13, 131, 0.9));
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-color:5px blue;
+    border-radius: 0.5rem;
+    box-shadow:0 0 7px 5px rgba(7, 7, 7, 0.5) ;
+}
+.container h1{
+    font-size: 35px;
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+}
+.input-name{
+    width: 90%;
+    position: relative;
+    margin: 15px ;
+}
+.name{
+    width: 98%;
+    font-size:large;
+    padding: 15px 0 10px 45px;
+    border-radius: 0.2rem;
+}
+.input-name i{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(10, 2, 63);
+    padding: 11px 15px;
+    border-right: 1px solid #292424;
+}
+.text-name:hover, .name:hover{
+    background-color: rgb(194, 227, 227);
+}
+::placeholder{
+    padding: 5px;
+    font-size: 20px;
+}
+.cancel-btn{
+    margin-left: 16%;
+}
+.submit-btn{
+    margin-left: 56%;
+    margin-top: -55px; 
+}
+.button{
+    width: 120px;
+    padding: 8px 2px 8px ;
+    border-radius:10px;
+    font-size: 17px;
+}
+.button:hover{
+    background-color: rgb(51, 176, 149);
+}
+.btn{
+    padding: 3%;
+}
